@@ -1,7 +1,8 @@
-import Echo from 'laravel-echo';
+
 window.Pusher = require('pusher-js');
 window._ = require('lodash');
 
+import Echo from 'laravel-echo';
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support

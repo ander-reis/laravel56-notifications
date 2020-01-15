@@ -47,3 +47,13 @@ Route::get('/contact', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/**
+ * teste laravel collective
+ */
+Route::group([
+    'prefix' => 'admin',
+    'namespace' => 'Admin'
+], function () {
+    Route::resource('clients', 'ClientsController');
+});
